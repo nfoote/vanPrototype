@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "7594409118",
+    "firebase_url": "https://firefly-1348.firebaseio.com",
+    "project_id": "firefly-1348",
+    "storage_bucket": "firefly-1348.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7594409118:android:900e4f9d41d39370",
+        "android_client_info": {
+          "package_name": "nfoote.uhackprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7594409118-09re5qlf1ihevib2s53l7r1sdcirafcn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nfoote.uhackprototype",
+            "certificate_hash": "247bfc2d7449e728b0f659c289f094bdc21afb65"
+          }
+        },
+        {
+          "client_id": "7594409118-26hoc204khomc453fhap227nsehl797f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-5JvF7EeaHZPAtXh7OkMLkDVVL85vpbo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7594409118-26hoc204khomc453fhap227nsehl797f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

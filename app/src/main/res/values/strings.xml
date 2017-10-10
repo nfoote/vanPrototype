@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Prototype</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">306520433157334</string>
+    <string name="action_logout">Logout</string>
+
+
+</resources>
