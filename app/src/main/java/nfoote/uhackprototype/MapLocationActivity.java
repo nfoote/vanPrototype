@@ -72,15 +72,9 @@ public class MapLocationActivity extends Fragment
     //double longitude = 78.486671;
 
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
-
-
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
-
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -94,17 +88,11 @@ public class MapLocationActivity extends Fragment
         //mapFrag.getMapAsync(this);
         mapFrag.getMapAsync(this);
 
-
         Button shareButton = (Button) v.findViewById(R.id.share);
         shareButton.setOnClickListener(this);
-
-
-
         shareDialog = new ShareDialog(this);  // initialize facebook shareDialog.
 
-
         return v;
-
     }
 
     @Override
@@ -121,7 +109,6 @@ public class MapLocationActivity extends Fragment
     public void onMapReady(GoogleMap googleMap)
     {
         /*
-
         //Test Code for placing markers and placing multiple on map.
 
         //BitmapDrawable bitmapdraw=(BitmapDrawable)getResources().getDrawable(R.mipmap.scclogo);
@@ -200,10 +187,14 @@ public class MapLocationActivity extends Fragment
     }
 
     @Override
-    public void onConnectionSuspended(int i) {}
+    public void onConnectionSuspended(int i) {
+        //TODO
+    }
 
     @Override
-    public void onConnectionFailed(ConnectionResult connectionResult) {}
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+        //TODO
+    }
 
     @Override
     public void onLocationChanged(Location location)
@@ -269,8 +260,6 @@ public class MapLocationActivity extends Fragment
                         })
                         .create()
                         .show();
-
-
             } else {
                 // No explanation needed, we can request the permission.
                 ActivityCompat.requestPermissions(getActivity(),
@@ -320,7 +309,6 @@ public class MapLocationActivity extends Fragment
 
         switch (v.getId()) {
             case R.id.share:
-
                 if (ShareDialog.canShow(ShareLinkContent.class)) {
                     ShareLinkContent linkContent = new ShareLinkContent.Builder()
                             .setContentUrl(Uri.parse("https://developers.facebook.com"))

@@ -35,14 +35,10 @@
         <activity android:name=".RegisterActivity"
             android:theme="@style/MyMaterialTheme.logReg"/>
 
-
-
-
         <provider android:authorities="com.facebook.app.FacebookContentProvider306520433157334"
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true"/>
-
-
+        <!--Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA0CfjrJhG_LoCr1fmnA_6ctUIH3i0y7bE"/>

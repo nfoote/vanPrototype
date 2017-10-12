@@ -19,7 +19,6 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
 public class ListFragment extends Fragment {
 
     private static final String TAG = "RecyclerViewFragment";
@@ -41,7 +40,7 @@ public class ListFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /* Add some dummy data to the db */
+        //Add some dummy data to the db */
         //Order order1 = new Order("First");
         //Order order2 = new Order("Second");
         //ref.child("orders").push().setValue(order1);

@@ -22,16 +22,15 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class MainActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
+    public Toolbar toolbar;
+    public TabLayout tabLayout;
+    public ViewPager viewPager;
     private FirebaseAuth firebaseAuth;
 
-    //An array containing your icons from the drawable directory
-    final int[] ICONS = new int[]{
+    //An array containing icons from the drawable directory
+    final int[] ICONS = new int[] {
             R.drawable.ic_action_map2,
             R.drawable.ic_action_list2
     };
@@ -45,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         //getSupportActionBar().setIcon(R.drawable.logo); change the logo (TODO)
         //getSupportActionBar().hide(); //Hide the toolbar so we only have tabs
@@ -54,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         AppBarLayout.LayoutParams p = (AppBarLayout.LayoutParams) toolbar.getLayoutParams();
         p.setScrollFlags(0); //Stop the actionbar from scrolling
         toolbar.setLayoutParams(p);
-
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -68,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
         //initialise firebase authentication object
         firebaseAuth = FirebaseAuth.getInstance();
 
-
         //if the user is not logged in
         //that means current user will return null
         if(firebaseAuth.getCurrentUser() == null){
@@ -80,19 +76,18 @@ public class MainActivity extends AppCompatActivity {
 
         //getting current user
         FirebaseUser user = firebaseAuth.getCurrentUser();
-
     }
 
     private void setupViewPager(ViewPager viewPager) {
+
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new MapLocationActivity(), "Map");
         adapter.addFragment(new ListFragment(), "Sales");
-
         viewPager.setAdapter(adapter);
     }
 
 
-    class ViewPagerAdapter extends FragmentPagerAdapter {
+    private class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 
